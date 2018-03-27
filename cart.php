@@ -1,40 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
         <title>Cart | Life Style Store</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo|Chenlax|CrimsonText"/>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+                <link type="text/css" href="css/style.css" rel="stylesheet"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-		<!--jQuery library--> 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<!--Latest compiled and minified JavaScript--> 
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		
-        <link type="text/css" href="css/style.css" rel="stylesheet"/>
-    
     </head>
     <body>
-        <div class="container-fluid" id="content">
-            <div class="navbar navbar-inverse navbar-fixed-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>                        
-                        </button>
-                        <a class="navbar-brand" href="index.php">Happy Store</a>
+            <nav class="navbar bg-info navbar-fixed-top">
+                <div class="container">                     
+                        <h3 class="display-3 text-white">Happy Store</h3>
+                     <div class="row float-right">
+                            <a class="nav-item nav-link text-white lead" href = "settings.html"><span class = "glyphicon glyphicon-user"></span> Settings</a>
+                            <a class="nav-item nav-link text-white lead" href = ""><span class = "glyphicon glyphicon-log-in"></span> Logout</a>
+                        </div>
                     </div>
-                    <div class="collapse navbar-collapse" id="myNavbar">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href = "settings.html"><span class = "glyphicon glyphicon-user"></span> Settings</a></li>
-                            <li><a href = ""><span class = "glyphicon glyphicon-log-in"></span> Logout</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row decor_bg">
+                </nav>
+           
+            <div class="row justify-content-center">
                 <div class="col-md-6 col-md-offset-3">
                     <table class="table table-striped">
                         <thead>
@@ -54,12 +44,52 @@
                 </div>
             </div>
         </div>
-        <footer>
-            <div class="container">
-                <center>
-                    <p>Copyright &copy; Lifestyle Store. All Rights Reserved  |  Contact Us: +91 90000 00000</p>	
-                </center>
-            </div>
-        </footer>
+
     </body>
+    <div  class="jumbotron bg-info">
+        <div class="container">
+            <center>
+                
+                <p class="lead text-white">Copyright &copy; Lifestyle Store. All Rights Reserved  |  Contact Us: +91 90000 00000</p>
+            <table class="table table-condensed text-white lead">
+                <thead>
+                    <th>
+                        Information
+                    </th>
+                    <th>
+                        My Account
+                    </th>
+                    <th>
+                        Contact Us
+                    </th>
+                </thead>
+                <tr>
+                    <td>
+                        About us
+                    </td>
+                    <td>
+                        Login
+                    </td>
+                    <td>
+                        +91974780087
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Contact up
+                    </td>
+                    <td>
+                        Signup
+                    </td>
+                    <td>
+                       
+                    </td>
+                </tr>
+            </table>
+   
+            </center>
+            
+        </div>
+            
+    </div>
 </html>
