@@ -54,11 +54,87 @@
 </div>
             </div>
         </div>
-                 
-        <div class="container-fluid bg-info fixed-bottom">
-            <p class="text-center text-white">Copyright &copy; Lifestyle Store. All Rights Reserved  |  Contact Us: +91 90000 00000</p>
-        </div>       
+           
         
+        
+        <div class="container py-5">
+            <div class="row ">
+                <?php 
+                 $con = mysqli_connect("localhost", "root","", "happystore")
+    or die(mysqli_error($con));
+                $sql= "select price,name,image  FROM camers";
+                $result = mysqli_query($con, $sql);
+                
+                
+                 for ($i=0;$i<=3;$i++){
+                     $row= mysqli_fetch_array($result); ?>                
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="<?php echo $row['image'];?>" height="200"width=250"/>
+                        <div class="caption">
+                            <h3><?php echo $row['name'];?></h3>
+                            <p><?php echo $row['price'];?></p>
+                            <p><a href="login.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+              
+                <?php } ?>
+            </div>
+            <div class="row ">
+                <?php 
+                 $con = mysqli_connect("localhost", "root","", "happystore")
+    or die(mysqli_error($con));
+                $sql= "select price,name,image  FROM shirts";
+                $result = mysqli_query($con, $sql);
+                
+                
+                 for ($i=0;$i<=3;$i++){
+                     $row= mysqli_fetch_array($result); ?>                
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail ">
+                        <img src="<?php echo $row['image'];?>" height="200"width=250" />
+                        <div class="caption">
+                            <h3><?php echo $row['name'];?></h3>
+                            <p><?php echo $row['price'];?></p>
+                            <p><a href="login.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+              
+                <?php } ?> 
+           </div>
+            <div class="row ">
+                <?php 
+                 $con = mysqli_connect("localhost", "root","", "happystore")
+    or die(mysqli_error($con));
+                $sql= "select price,name,image  FROM camers";
+                $result = mysqli_query($con, $sql);
+                
+                
+                 for ($i=0;$i<=3;$i++){
+                     $row= mysqli_fetch_array($result); ?>                
+                <div class="col-md-3 col-sm-6 home-feature">
+                    <div class="thumbnail">
+                        <img src="<?php echo $row['image'];?>" height="200"width=250"/>
+                        <div class="caption">
+                            <h3><?php echo $row['name'];?></h3>
+                            <p><?php echo $row['price'];?></p>
+                            <p><a href="cart.php" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
+                        </div>
+                    </div>
+                </div>
+              
+                <?php } ?>
+                    
+                
+                
+            </div>
+        </div>
+        
+        
+        
+       
     </body>
     
 </html>
