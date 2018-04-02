@@ -14,48 +14,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <nav class="navbar bg-info navbar-default">
-            <div class="container">
-                <h2 class="display-4 text-white">Happy Store</h2>
-                <div class="row float-right">
-                    <a class="nav-item nav-link text-white" data-toggle="modal" data-target="#exampleModal">Login</a>
-                    <a class="nav-item nav-link text-white " href="cart.php">Cart</a> 
-                    <a class="nav-item nav-link text-white " href="About Us.php">About Us</a>  
-                </div>   
-            </div>
-                        
-        </nav>
-        <div class="container">
-            <div class="row">
-           <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-            <div class="modal-content">
-             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-            <form class='form-group'>
-              <input class="form-control" type='text' name='name' placeholder="User Id"/>
-              <input class="form-control" type='password' name='pass' placeholder="Password"/>
-              <button type="submit" class="btn btn-primary">Login</button>
-            </form>
-      </div>
-        <div class="modal-footer">
-            <p>Don't have an account</p>
-            <button type="button" class="btn btn-primary"><a class="text-white" href="signup.php">SignUp</a></button>
-       
-      </div>
-    </div>
-  </div>
-</div>
-            </div>
-        </div>
-           
+       <?php 
+       include 'includes/navb1.php';
         
+       ?>
         
         <div class="container py-5">
             <div class="row ">
@@ -72,8 +34,8 @@
                     <div class="thumbnail">
                         <img src="<?php echo $row['image'];?>" height="200"width=250"/>
                         <div class="caption">
-                            <h3><?php echo $row['name'];?></h3>
-                            <p><?php echo $row['price'];?></p>
+                            <h3 class="text-center lead"><?php echo $row['name'];?></h3>
+                            <p class="text-center lead">Rs<?php echo $row['price'];?></p>
                             <p><a href="login.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
                         </div>
                     </div>
@@ -95,8 +57,8 @@
                     <div class="thumbnail ">
                         <img src="<?php echo $row['image'];?>" height="200"width=250" />
                         <div class="caption">
-                            <h3><?php echo $row['name'];?></h3>
-                            <p><?php echo $row['price'];?></p>
+                            <h3 class="text-center lead"><?php echo $row['name'];?></h3>
+                            <p class="text-center lead ">Rs.<?php echo $row['price'];?></p>
                             <p><a href="login.html" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
                         </div>
                     </div>
@@ -118,8 +80,8 @@
                     <div class="thumbnail">
                         <img src="<?php echo $row['image'];?>" height="200"width=250"/>
                         <div class="caption">
-                            <h3><?php echo $row['name'];?></h3>
-                            <p><?php echo $row['price'];?></p>
+                            <h3 class="text-center lead"><?php echo $row['name'];?></h3>
+                            <p class="text-center lead">Rs. <?php echo $row['price'];?></p>
                             <p><a href="cart.php" role="button" class="btn btn-primary btn-block">Add to cart</a></p>
                         </div>
                     </div>
@@ -131,9 +93,11 @@
                 
             </div>
         </div>
-        
-        
-        
+       
+        <?php 
+        include 'includes/footer.php';
+                
+         ?>  
        
     </body>
     
