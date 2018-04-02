@@ -13,7 +13,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body id="well_id">
+    <body>
+        <?php
+        include 'includes/navb1.php';
+        ?>
+        <div class="container" id="well_id">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-sm-10">
@@ -22,44 +26,10 @@
                
             </div>               
                 
-              
+            </div>  
             
-        </div>   
-        <div class="container">
-            <div class="row justify-content-center">
-                
-                    <div class="nav ">
-                        <button class="btn btn-md active"><a class="nav-item nav-link font-weight-bold" href="#">Home</a></button>   
-                        <button class="btn btn-md"><a class="nav-item nav-link font-weight-bold" href="About Us.php">About Us</a></button>
-                        <button class="btn btn-md"><a class="nav-item nav-link font-weight-bold" href="#" data-toggle="modal" data-target="#exampleModal">Ask Us</a> </button>      
-
-                    </div>
-            </div>
-        </div>
-            
-            <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Ask Us</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-          <form>
-              <input class="form-control form-group"type="text" name="cnt" placeholder="E-mail/Contact No">
-              <input class="form-control form-group" type="text-field" name="content" place="Query">
-          </form>
-      </div>
-      <div class="modal-footer">
-           <button type="button" class="btn btn-primary">Submit</button>
-      </div>
-    </div>
-  </div>
-</div>
-            
+          
+          
             
         <div class="container py-5">
             <div class="row justify-content-center">
@@ -68,53 +38,16 @@
             </button>
         </div>
         </div>
-         
-    </body>
-    <div class="footer">
-        
-        
-            <center>
-                
-                <p class="lead text-white">Copyright &copy; Lifestyle Store. All Rights Reserved  |  Contact Us: +91 90000 00000</p>
-            <table class="table table-condensed text-white lead">
-                <thead>
-                    <th>
-                        Information
-                    </th>
-                    <th>
-                        My Account
-                    </th>
-                    <th>
-                        Contact Us
-                    </th>
-                </thead>
-                <tr>
-                    <td>
-                        About us
-                    </td>
-                    <td>
-                        Login
-                    </td>
-                    <td>
-                        +91974780087
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Contact up
-                    </td>
-                    <td>
-                        Signup
-                    </td>
-                    <td>
-                       
-                    </td>
-                </tr>
-            </table>
-   
-            </center>
+      </div>
             
-    </div>> 
-
+         </div>   
+           
+        <?php 
+        include 'includes/footer.php';
+                
+         ?>  
+    </body>
+   
+    
     
 </html>
